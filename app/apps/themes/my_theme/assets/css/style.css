@@ -14,12 +14,13 @@ body {
 }
 
 a {
-  color: #03C4EB;
+  color: #862d86; /*menu fonts color*/
   transition: 0.5s;
+  text-transform: uppercase;;
 }
 
 a:hover, a:active, a:focus {
-  color: #03c5ec;
+  color: black; /*menu fonts hover color*/
   outline: none;
   text-decoration: none;
 }
@@ -87,9 +88,17 @@ h1, h2, h3, h4, h5, h6 {
 
 }
 
+.coming h4{
+  font-size: 300%;
+  padding-top: 30px;
+  color: #862d86;
+}
+
 /*--------------------------------------------------------------
 # Welcome
 --------------------------------------------------------------*/
+
+
 #hero {
   display: table;
   width: 100%;
@@ -188,17 +197,17 @@ h1, h2, h3, h4, h5, h6 {
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
-.imperial-navbarr{
-  background-color: #111;
-  background: rgba(0, 0, 0, 0.85);
+.imperial-navbar{
+  background-color: white;
+  background: white; /*menu bar color*/
 
 }
 
 .header-nav {
-  background: #111;
+  background: white;
   padding: 20px 0;
   height: 90px;
-  background: rgba(0, 0, 0, 0.9);
+  background: white; /*header color*/
 
 }
 
@@ -272,7 +281,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navigation-menu a:hover{
-  background-color: #2a2a44;
+  background-color: white; /*menu fonts box hover color*/
 }
 
 .navbar-header{
@@ -285,7 +294,7 @@ h1, h2, h3, h4, h5, h6 {
   padding-top: 0px;
   padding-bottom: 10px;
   background-color: #666666;
-  background: rgba(26, 26, 26, 0.9);
+  background: white;
 }
 
 .nav-menu, .nav-menu * {
@@ -374,7 +383,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .nav-menu a:hover, .nav-menu li:hover > a, .nav-menu .menu-active > a {
-  color: #03C4EB;
+  color: white;
 }
 
 .nav-menu ul {
