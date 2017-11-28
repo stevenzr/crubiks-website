@@ -285,9 +285,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navbar-header{
-  color: #111;
+  color: white;
   background-color: #fff;
-  background: #111;
+  background: white;
 }
 /*add this */
 .navbar-brand {
