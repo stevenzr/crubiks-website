@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- META SECTION -->
+    <title><%= current_site.the_title %></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- END META SECTION -->
+
+    <%= stylesheet_link_tag theme_asset_path("css/style") %>
+    <%= javascript_include_tag theme_asset_path("js/main.js") %>
+    <%= raw the_head %>
+</head>
+<body>
+
+    <!-- container -->
+    
+        <!-- header -->
+        <%= render theme_view('layouts/header') %>
+    <% if is_home? %>
+        <%= yield %>
+    <% else %>
+        <div class="banner1"> </div>
+        <div class="content">
+            <div class="container inner_container">
+                <%= yield %>
+            </div>
+        </div>
+    <% end %>
+        <!-- ./header -->
+
+        
+
+        <!-- footer -->
+        <footer>
+            <%= render theme_view('layouts/footer') %>
+        </footer>
+        <!-- ./footer -->
+    
+    <!-- ./container -->
+</body>
+</html>

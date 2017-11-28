@@ -1,0 +1,14 @@
+{
+  "name" : "My Theme",
+  "description" : "",
+  "thumb" : "images/image.png",
+  "helpers": [
+    "Themes::MyTheme::MainHelper"
+  ],
+  "hooks": {
+    "on_active": ["my_theme_on_install_theme"],
+    "on_inactive": ["my_theme_on_uninstall_theme"],
+    "on_theme_settings": ["my_theme_settings"]
+    //here all your hooks
+  }
+}
