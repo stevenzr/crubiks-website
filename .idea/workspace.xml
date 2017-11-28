@@ -2,93 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f7168ba0-7a6f-49f0-bb4a-f9f0117ef74e" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/apps/themes/camaleon_first/assets/css/magnific-ver.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/apps/themes/camaleon_first/assets/css/main.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/apps/themes/camaleon_first/assets/css/style-ver.css.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/apps/themes/camaleon_first/assets/css/wpbase.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/apps/themes/camaleon_first/assets/images/empe.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/apps/themes/camaleon_first/assets/images/image.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/apps/themes/camaleon_first/assets/images/loader.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/apps/themes/camaleon_first/assets/images/zoom.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/apps/themes/camaleon_first/assets/js/hover.zoom.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/apps/themes/camaleon_first/assets/js/magnific.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/apps/themes/camaleon_first/assets/js/main-ver.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/apps/themes/camaleon_first/assets/js/main.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/apps/themes/camaleon_first/assets/js/modernizr.custom.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/apps/themes/camaleon_first/config/config.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/apps/themes/camaleon_first/main_helper.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/apps/themes/camaleon_first/views/index.html.erb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/apps/themes/camaleon_first/views/layouts/camaleon_cms/mailer.html.erb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/apps/themes/camaleon_first/views/layouts/index.html.erb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/apps/themes/camaleon_first/views/mailer.html.erb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/apps/themes/camaleon_first/views/partials/readme.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/apps/themes/camaleon_first/views/template_sample_page.html.erb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/apps/themes/default/assets/css/main.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/apps/themes/default/assets/css/style.css.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/apps/themes/default/assets/css/styles.css.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/apps/themes/default/assets/genericons/COPYING.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/apps/themes/default/assets/genericons/Genericons-Regular.otf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/apps/themes/default/assets/genericons/LICENSE.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/apps/themes/default/assets/genericons/README.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/apps/themes/default/assets/genericons/font/genericons-regular-webfont.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/apps/themes/default/assets/genericons/font/genericons-regular-webfont.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/apps/themes/default/assets/genericons/font/genericons-regular-webfont.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/apps/themes/default/assets/genericons/font/genericons-regular-webfont.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/apps/themes/default/assets/genericons/genericons.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/apps/themes/default/assets/images/circle.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/apps/themes/default/assets/images/dotted-line-2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/apps/themes/default/assets/images/dotted-line-light-2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/apps/themes/default/assets/images/dotted-line-light.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/apps/themes/default/assets/images/dotted-line.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/apps/themes/default/assets/images/headers/circle-thumbnail.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/apps/themes/default/assets/images/headers/circle.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/apps/themes/default/assets/images/headers/diamond-thumbnail.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/apps/themes/default/assets/images/headers/diamond.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/apps/themes/default/assets/images/headers/star-thumbnail.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/apps/themes/default/assets/images/headers/star.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/apps/themes/default/assets/images/image.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/apps/themes/default/assets/images/search-icon-2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/apps/themes/default/assets/images/search-icon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/apps/themes/default/assets/js/main.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/apps/themes/default/config/config.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/apps/themes/default/default_helper.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/apps/themes/default/views/admin/settings.html.erb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/apps/themes/default/views/category.html.erb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/apps/themes/default/views/index.html.erb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/apps/themes/default/views/layouts/index.html.erb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/apps/themes/default/views/page.html.erb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/apps/themes/default/views/partials/_breadcrumb.html.erb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/apps/themes/default/views/partials/_categories_list.html.erb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/apps/themes/default/views/partials/_comments.html.erb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/apps/themes/default/views/partials/_comments_list.html.erb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/apps/themes/default/views/partials/_flash_messages.html.erb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/apps/themes/default/views/partials/_forms.html.erb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/apps/themes/default/views/partials/_post_list_item.html.erb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/apps/themes/default/views/partials/_search_form.html.erb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/apps/themes/default/views/partials/_sidebar.html.erb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/apps/themes/default/views/post.html.erb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/apps/themes/default/views/post_tag.html.erb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/apps/themes/default/views/post_type.html.erb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/apps/themes/default/views/search.html.erb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/apps/themes/new/assets/css/main.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/apps/themes/new/assets/css/styles.css.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/apps/themes/new/assets/images/image.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/apps/themes/new/assets/js/main.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/apps/themes/new/config/config.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/apps/themes/new/custom_helper.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/apps/themes/new/image.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/apps/themes/new/views/admin/settings.html.erb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/apps/themes/new/views/category.html.erb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/apps/themes/new/views/index.html.erb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/apps/themes/new/views/layouts/_footer.html.erb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/apps/themes/new/views/layouts/_header.html.erb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/apps/themes/new/views/layouts/index.html.erb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/apps/themes/new/views/page.html.erb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/apps/themes/new/views/post.html.erb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/apps/themes/new/views/post_tag.html.erb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/apps/themes/new/views/post_type.html.erb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/apps/themes/new/views/search.html.erb" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/apps/themes/my_theme/views/index.html.erb" afterPath="$PROJECT_DIR$/app/apps/themes/my_theme/views/index.html.erb" />
     </list>
     <ignored path="crubiks-web.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -117,8 +31,8 @@
       <file leaf-file-name="index.html.erb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/apps/themes/my_theme/views/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.9625" vertical-offset="2995" max-vertical-offset="3795">
-              <caret line="95" column="53" selection-start-line="95" selection-start-column="53" selection-end-line="95" selection-end-column="53" />
+            <state vertical-scroll-proportion="0.70892626" vertical-offset="127" max-vertical-offset="3840">
+              <caret line="45" column="46" selection-start-line="45" selection-start-column="46" selection-end-line="45" selection-end-column="46" />
               <folding />
             </state>
           </provider>
@@ -745,12 +659,12 @@
       <option name="number" value="Default" />
       <updated>1511757270650</updated>
       <workItem from="1511757275792" duration="4461000" />
-      <workItem from="1511835267401" duration="826000" />
+      <workItem from="1511835267401" duration="1313000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5287000" />
+    <option name="totallyTimeSpent" value="5774000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -916,8 +830,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/apps/themes/my_theme/views/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.9625" vertical-offset="2995" max-vertical-offset="3795">
-          <caret line="95" column="53" selection-start-line="95" selection-start-column="53" selection-end-line="95" selection-end-column="53" />
+        <state vertical-scroll-proportion="0.70892626" vertical-offset="127" max-vertical-offset="3840">
+          <caret line="45" column="46" selection-start-line="45" selection-start-column="46" selection-end-line="45" selection-end-column="46" />
           <folding />
         </state>
       </provider>
