@@ -965,7 +965,7 @@ padding: 80px 0;
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  background: #111;
+  background: #581845;
   padding: 20px 0;
   color: #fff;
 }
@@ -998,7 +998,13 @@ padding: 80px 0;
 }
 
 #footer .social:hover {
-  background: white;
+  background: black;
+}
+
+#footer i{
+  color: white;
+  background: #581845;
+
 }
 
 
