@@ -7,6 +7,19 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+.menu-bottom-line{
+  width: 100%;
+  height: 1em;
+  background-color: #581845;
+  margin-top: 1em;
+}
+
+p.linespace {
+    line-height: 150%;
+  font-size: 16px;
+}
+
+
 body {
   background: #fff;
   color: #666666;
@@ -16,7 +29,7 @@ body {
 a {
   color: #862d86; /*menu fonts color*/
   transition: 0.5s;
-  text-transform: uppercase;;
+  text-transform: uppercase;
 }
 
 a:hover, a:active, a:focus {
@@ -35,6 +48,15 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
   margin: 0 0 20px 0;
   padding: 0;
+}
+
+.btn-group{
+  margin-top: 3em;
+}
+
+.btn-group a{
+  height: 2em;
+  width: 6em;
 }
 
 /* Prelaoder */
@@ -94,10 +116,43 @@ h1, h2, h3, h4, h5, h6 {
   color: #862d86;
 }
 
-/*--------------------------------------------------------------
-# Welcome
---------------------------------------------------------------*/
 
+/*--------------------------------------------------------------
+# Welcome & slider
+--------------------------------------------------------------*/
+#slider-container{
+  width: 95%;
+  height: 30em;
+  border: 1px solid black;
+  margin: 0 auto;
+  position: relative;
+  margin-top: 3em;
+}
+
+#slider-container img{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+#slider-container .btn{
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 25px;
+  top: 200px;
+  background: black;
+  color: white;
+  font-size: 20px;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+#slider-container #btn2{
+  position: relative;
+  float: right;
+}
 
 #hero {
   display: table;
@@ -208,6 +263,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 20px 0;
   height: 90px;
   background: white; /*header color*/
+  
 
 }
 
@@ -543,7 +599,6 @@ body.mobile-nav-active #mobile-nav-toggle {
 .section-title-divider {
   width: 50px;
   height: 3px;
-  background: #03C4EB;
   margin: 0 auto;
   margin-bottom: 20px;
 }
@@ -610,13 +665,15 @@ body.mobile-nav-active #mobile-nav-toggle {
 /* Services Section
 --------------------------------*/
 #services{
-background: #fff;
-padding: 80px 0;
+background-image: url("https://s3-ap-southeast-1.amazonaws.com/drupalcrubiksassets/crubiks1revisi/crubiks1revisi/ServicesBg.jpg");
+margin-top: 6em;
+margin-left: 3em;
+margin-right: 3em;
 }
 
 #services .services-item {
-  background-position: center center;
-  background-size: cover;
+  background-position: top;
+  background-size: 10em;
   background-repeat: no-repeat;
   position: relative;
   height: 260px;
@@ -624,16 +681,49 @@ padding: 80px 0;
   display: table;
   overflow: hidden;
   margin-bottom: 30px;
+  background-color: #262626;
+  background-position-y: 1em;
+  opacity: 0.8;
 }
 
-#services .services-item .details {
-  height: 260px;
-  background: #fff;
+#services .services-item .detail {
+
   display: table-cell;
   vertical-align: middle;
-  opacity: 0;
-  transition: 0.3s;
+
   text-align: center;
+}
+
+#services .services-item .detail h1{
+  color: white;
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: 200;
+  padding-top: 2em;
+  font-family: Times;
+  letter-spacing: 0.05em;
+}
+
+#services .services-item .detail h4{
+  color: white;
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: 200;
+  padding-top: 7em;
+  font-family: Times;
+  letter-spacing: 0.05em;
+}
+
+#services .services-item .detail h5{
+  color: white;
+  text-align: center;
+  font-size: 1em;
+  padding-top: 0;
+  font-family: Times;
+  letter-spacing: 0.05em;
+  text-transform: initial;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
 }
 
 #services .services-item .details h4 {
@@ -671,6 +761,25 @@ padding: 80px 0;
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
 }
+
+/* Services menu template Section
+--------------------------------*/
+#services-menu{
+  margin-top: 3em;
+  margin-bottom: 3em;
+}
+
+.services-menu-image{
+  padding-left: 3em;
+  padding-right: 3em;
+}
+
+.services-menu-image img{
+  height: 30em;
+  width: 100%
+}
+
+
 
 
 /* Subscribe Section
@@ -890,6 +999,96 @@ padding: 80px 0;
   margin: 0 2px;
 }
 
+/* Free consultation section
+--------------------------------*/
+#free-consultation {
+  padding-right: 3em;
+  padding-left: 3em;
+  margin-top: 5em;
+}
+
+#free-consultation .left{
+  width: 25%;
+  background: #762C59;
+  padding-top: 1em;
+}
+
+#free-consultation .right{
+  width: 75%;
+  
+}
+
+#free-consultation .box{
+  float: left;
+  height: 25em;
+}
+
+#free-consultation .grid-item{
+padding-left: 2em;
+float: none;
+display: inline-block;
+vertical-align: top;
+}
+
+#free-consultation h1{
+  font-size: 7.5em;
+  color: white;
+  text-align: center;
+}
+
+#free-consultation h2{
+  font-size: 2.5em;
+  color: white;
+  text-align: center;
+}
+
+#free-consultation h3{
+  font-size: 1em;
+  color: white;
+  padding-left: 15em;
+  padding-top: 4em;
+}
+
+#free-consultation h4{
+  font-size: 1em;
+  color: white;
+  padding-left: 17em;
+  padding-top: 0em;
+}
+
+#free-consultation img{
+  width: 1039.5px;
+  height: 350px;
+}
+
+#consultation-text-right{
+  background: white;
+  padding-top: 5em;
+  padding-bottom: 5em;
+}
+
+#consultation-text-right .square{
+  float: right;
+  height: 12em;
+}
+
+#consultation-text-right .l{
+width: 70%;
+}
+
+#consultation-text-right .r{
+  width: 30%;
+  background: #762C59;
+}
+
+#consultation-text-right h5{
+  font-size: 1.5em;
+  color: white;
+  text-align: justify;
+  padding: 1em;
+  letter-spacing: 0.1em;
+  font-family: "Arial"
+}
 /* Contact Section
 --------------------------------*/
 #contact {
@@ -966,8 +1165,47 @@ padding: 80px 0;
 --------------------------------------------------------------*/
 #footer {
   background: #581845;
-  padding: 20px 0;
+  padding: 0px;
   color: #fff;
+}
+
+#footer h1{
+  padding-top: 10px;
+  font-size: 1.5em;
+  padding-left: 1em;
+}
+
+#footer h2{
+  padding-top: 0px;
+  font-size: 1.2em;
+  color: #d0d0e1;
+  padding-left: 1em;
+}
+
+
+
+#footer a{
+  color: white;
+  padding-left: 1.5em;
+}
+
+#footer a:hover{
+  color: black;
+}
+
+#footer .footer-icons{
+  display: inline-block;
+  padding-left: 30em;
+  padding-top: 18em;
+
+}
+
+#footer .footer-icons i{
+ 
+}
+
+#footer .footer-icons a{
+  padding: 0px 0px;
 }
 
 #footer .copyright {
@@ -982,20 +1220,18 @@ padding: 80px 0;
 }
 
 #footer .social {
-   font-size: 20px;
-    height: 30px;
-    width: 30px;
+   font-size: 1.5em;
+    height: 1.5em;
+    width: 1.5em;
     text-align: center;
-    padding: 5px;
-    border: 1px solid #cccccc;
-    margin-bottom: 10px;
-    margin-right: 5px;
-    margin-top: 10px;
+    padding: 0.25em;
+    border: 0.1em solid #cccccc;
+    margin-bottom: 0.1em;
+    margin-right: 0.1em;
+    margin-top: 0.5em;
 }
 
-#footer .copyright{
-  padding-top: 30px;
-}
+
 
 #footer .social:hover {
   background: black;
@@ -1008,3 +1244,495 @@ padding: 80px 0;
 }
 
 
+#footer .box3{
+  height: 2.5em;
+  background: #9F034C;
+  width: 100%;
+  text-align: right;
+
+}
+
+#footer .box3 h3{
+  font-size: 1em;
+  padding-top: 0.5em;
+  padding-right: 1em;
+}
+
+#footer button[type="submit"] {
+  background: #300F31;
+  border-width: 0.2em;
+  border-style: solid;
+  padding-left: 2em;
+  padding-right: 2em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  color: #fff;
+  transition: 0.4s;
+}
+
+
+#footer .container2{
+  
+  width: 100%;
+}
+
+#footer .box{
+  float: left;
+  height: 21.5em;
+}
+
+#footer .left{
+  width: 20%;
+  background: #300F31;
+  padding-top: 2em;
+}
+
+#footer .right{
+  width: 80%;
+}
+
+#footer .left h1{
+  text-align: center;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+
+
+#footer .grid-item{
+padding-left: 1em;
+float: none;
+display: inline-block;
+vertical-align: top;
+}
+
+#footer .grid-item2{
+  float: none;
+  display: inline-block;
+  vertical-align: top;
+  padding-left: 8em;
+}
+
+#footer .grid-item a{
+  font-size: 1.2em;
+  color: white;
+  text-transform: lowercase;
+}
+
+#footer .grid-item a:hover{
+  font-size: 1.2em;
+  color: black;
+}
+
+#footer .grid-item2 a{
+  font-size: 1.1em;
+  color: white;
+  text-transform: uppercase;
+  
+}
+
+#footer .grid-item2 a:hover{
+  font-size: 1.1em;
+  color: black;
+}
+
+/*--------------------------------------------------------------
+# Analytic
+--------------------------------------------------------------*/
+#analytic{
+  padding-left: 3em;
+  padding-right: 3em;
+  margin-top: -10em;
+  margin-bottom: 3em;
+}
+
+#analytic .box1{
+  
+  background-image: url("https://s3-ap-southeast-1.amazonaws.com/drupalcrubiksassets/crubiks1revisi/crubiks1revisi/home2.jpg");
+  background-size: 1440px 420px;
+  background-repeat: no-repeat;
+  background-origin: content-box;
+  height: 30em;
+}
+
+#analytic .grid-item{
+  float: right;
+  background: black;
+  height: 4em;
+  width: 30%;
+  margin-top: 12em;
+}
+
+#analytic .grid-item2{
+  float: right;
+  background: blue;
+  height: 150px;
+  width: 80em;
+}
+
+#analytic .grid-block{
+  margin-top: 12em;
+}
+
+#analytic h1{
+  color: white;
+  padding: 0.1em;
+}
+
+#analytic h2{
+  color: white;
+  padding: 1em;
+  font-size: 1.5em;
+  letter-spacing: .1em;
+  text-align: justify;
+}
+
+#analytic .box2{
+  margin-top: 3em;
+  padding-left: 3em;
+  padding-right: 3em;
+}
+
+#analytic .box2 h3{
+  background-color: white;
+  color: #762C59;
+  font-size: 6.5em;
+}
+
+#analytic .box2 h4{
+  background-color: white;
+  color: #762C59;
+  letter-spacing: 0.1em;
+  text-align: justify;font-size: 1.5em;
+  font-family: "arial";
+}
+
+/*--------------------------------------------------------------
+# SEO
+--------------------------------------------------------------*/
+#seo{
+  padding-bottom: 15em;
+  margin-top: 3em;
+}
+
+#seo .box1{
+  padding-left: 3em;
+  padding-right: 3em;
+  height: 40em;
+  
+}
+
+#seo img{
+  width: 100%;
+  height: 40em;
+}
+
+#seo .box2{
+  padding-left: 3em;
+  padding-right: 3em;
+  margin-top: 3em;
+}
+
+#seo .grid-item{
+  background-color: #762C59;
+  width: 60%;
+  float: right;
+  height: 10em;
+}
+
+#seo h1{
+  color:#762C59;
+  font-size: 6.5em;
+  text-align: right;
+}
+
+#seo h2{
+  color: white;
+  font-size: 1.5em;
+  text-align: justify;
+  letter-spacing: 0.1em;
+  padding: 0.5em;
+  font-family: "arial";
+}
+
+
+/*webdev*/
+.webdev-img {
+  margin-left: 3em;
+  margin-right: 3em;
+  height: 30em;
+}
+
+.webdev-img img{
+  height: 30em;
+  width: 100%;
+}
+
+#webdev{
+  margin-bottom: 20em;
+}
+
+
+#webdev .box1{
+  width: 40%;
+  background-color: #871b59;
+  height: 7em;
+  float: right;
+  margin-top: -3em;
+  position: relative;
+}
+
+#webdev .box1 p{
+  font-size: 3em;
+  color: white;
+  padding-left: 1em;
+  padding-top: 0.5em;
+}
+
+#webdev .grid-item{
+  width: 90%;
+  height: 15em;
+  padding-top: 1em;
+}
+
+#webdev h1{
+  color: black;
+  font-size: 1.5em;
+  text-align: justify;
+  font-weight: bold;
+  font-family: 'arial';
+  line-height: 1.2em;
+}
+
+/*digital what we do description box*/
+#digital{
+margin-bottom: 3em;
+margin-top: 3em;
+}
+
+#digital .box1{
+  background-color: #871b59;
+  width: 60%;
+  height: 10em;
+  margin-left: 3em;
+  margin-top: 3em;
+}
+
+#digital .box1 h1{
+  color: white;
+  text-align: left;
+  font-size: 5em;
+  padding-top: 0.5em;
+  padding-left: 1em;
+}
+
+#digital .transbox {
+  margin-left: 3em;
+  margin-top: 2em;
+  width: 60%;
+}
+
+#digital .transbox p {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #871b59;
+  text-align: justify;
+
+}
+
+/*adwords*/
+.adwords-image {
+padding-top: 3em;
+}
+
+.adwords-image img{
+  width: 100%;
+  height: 30em;
+}
+
+#adwords{
+  margin-bottom: 3em;
+}
+
+#adwords .box1{
+  width: 100%;
+  height: 8em;
+  background-color: #581845;
+  margin-top: 3em;
+}
+
+#adwords .box1 h1{
+  color: white;
+  font-size: 4em;
+  text-align: center;
+  padding-top: 0.5em;
+}
+
+#adwords .transboxads{
+  padding-left: 1.5em;
+  padding-top: 1.5em;
+  width: 75%;
+
+}
+
+#adwords .transboxads p {
+  margin: 2%;
+  margin-left: 50px;
+  font-weight: bold;
+  color: #871b59;
+  font-size: 1.5em;
+  text-align: justify;
+}
+
+#adwords .leftbox
+{
+  background-color: #000000;
+  float: left;
+  text-align: center;
+  width: 15em; 
+  height: 35em;
+  margin-top: -13em;
+  padding-top: 7em;
+}
+
+#adwords .leftbox p{
+  color: white;
+  font-size: 5em;
+  text-align: center;
+}
+
+#adwords .leftbox .hc2 p{
+  color: white;
+  font-size: 1.5em;
+}
+
+/*mobile what we do description box*/
+#mobile{
+  padding-bottom: 3em;
+  margin-top: 3em;
+}
+
+#mobile .transboxmobile {
+  margin: 1px;
+  background-color: #ffffff;
+  color:#871b59;
+  text-align: justify;
+  width: 80%;
+  font-size: 1.5em;
+}
+
+#mobile .transboxmobile p {
+  margin: 2%;
+  margin-left: 40px;
+  font-weight: bold;
+  color: #871b59;
+  font-size: 1em;
+  margin-top: 2em;
+}
+
+/*mobile what we do margin bottom*/
+#mobile .wwdmobile h1
+{
+  margin-bottom: 0;
+  margin-left: 18px;
+  color: #871b59;
+  font-size: 5em;
+  margin-top: 1em;
+}
+
+/*mobile 97% box*/
+#mobile .leftbox
+{
+  background-color: #871b59;
+  float: left;
+  text-align: center;
+  width: 250px; 
+  margin-top: 20px;
+}
+
+#mobile .leftbox p{
+  color: white;
+  font-size: 7em;
+}
+
+#mobile .leftbox .hc1 p{
+  color: white;
+  font-size: 1.5em;
+  margin: 1em;
+  text-align: left;
+}
+
+/*vacancy */
+#vacancy{
+margin-bottom: 3em;
+margin-top: 3em;
+}
+
+#vacancy .vacancy-img{
+  background: url("https://s3-ap-southeast-1.amazonaws.com/drupalcrubiksassets/crubiks1revisi/crubiks1revisi/home9a.jpg");
+  height: 40em;
+  margin-left: 2em;
+  margin-right: 3em;
+}
+
+#vacancy .wwd
+{
+  background-color: #871b59;
+  margin-top: -1em;
+  margin-left: 1.3em;
+  width: 70%;
+  font-size: 50px;
+  height: 2em;
+}
+
+#vacancy .wwd p{
+  color: white;
+  font-size: 1em;
+  text-align: left;
+  padding-left: 1.5em;
+  padding-top: 0.2em;
+}
+
+
+/*CLOUD SOLUTIONS*/
+#ImageContainer{
+  margin-right: 3em;
+  margin-left: 3em;
+  margin-top: 2em;
+  margin-bottom: 3em;
+}
+
+/*buttons for services*/
+.box1-buttons{
+  width: 100%;
+  padding-left: 1.5em;
+}
+
+.box1-buttons a{
+  font-size: 1em;
+  color: white;
+}
+
+.box1-buttons button{
+  min-width: 13em;
+  background-color: white;
+  height: 4em;
+  color: black;
+  font-size: 1em;
+  border: 2px solid #871b59;
+
+  text-transform: uppercase;
+}
+
+.box1-buttons button:hover{
+background-color: #871b59;
+color: white;
+transition: 0.5s;
+border: 2px solid black;
+}
+
+.container-buttons{
+  margin-left: 3em;
+  margin-right: 3em;
+  margin-top: 3em;
+}

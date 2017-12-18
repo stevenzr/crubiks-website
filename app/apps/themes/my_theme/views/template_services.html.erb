@@ -1,31 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>Imperial Boootstrap Template</title>
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <meta content="" name="keywords">
-  <meta content="" name="description">
-
-
-
-  </head>
-  <body>
-  <!-- slider-->
-
-    <div id="slider-container">
-      <img class="slides" src="https://s3-ap-southeast-1.amazonaws.com/drupalcrubiksassets/crubiks1revisi/crubiks1revisi/freeconsultation.png">
-      <img class="slides" src="https://s3-ap-southeast-1.amazonaws.com/drupalcrubiksassets/crubiks1revisi/crubiks1revisi/home7a.png">
-      <img class="slides" src="https://s3-ap-southeast-1.amazonaws.com/drupalcrubiksassets/crubiks1revisi/crubiks1revisi/home2.jpg">
-      <button class="btn" onclick="plusIndex(-1)" id="btn1">&#10094</button>
-      <button class="btn" onclick="plusIndex(1)" id="btn2">&#10095</button>
-    </div>
-
-
-  <!--==========================
-  Services Section
-============================-->
-  <section id="services">
+<section id="services-menu">
+	<div class="services-menu-image"> <!--this is template image you can change it in every other services pages-->
+		<img src="https://s3-ap-southeast-1.amazonaws.com/drupalcrubiksassets/crubiks1revisi/crubiks1revisi/ServicesBg.jpg">
+	</div>
+  
+	 <section id="services">
       <div class="container wow fadeInUp">
         <div class="row">
           <div class="col-md-12">
@@ -44,7 +22,7 @@
             </a>
           </div>
 
-         <div class="col-md-3">
+          <div class="col-md-3">
             <a class="services-item" style="background-image: url(https://s3-ap-southeast-1.amazonaws.com/drupalcrubiksassets/crubiks1revisi/crubiks1revisi/adwords1.png);" href="http://localhost:3000/adwords-1">
               <div class="detail">
                 <h4>Adwords</h4>
@@ -110,77 +88,4 @@
         </div>
       </div>
     </section>
-
-<!--==========================
-  Free consultation
-============================-->
-  <section id="free-consultation">
-    <div class="row">
-      <div class="box left">
-        <div class="grid-block">
-          <div class="grid-item">
-            <h1>FREE</h1>
-            <h2>CONSULTATION</h2>
-            <div class="free-consultation-item">
-              <h3>Contact Us:</h3>
-              <h4>Crubiks</h4>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="box right">
-        <img src="https://s3-ap-southeast-1.amazonaws.com/drupalcrubiksassets/crubiks1revisi/crubiks1revisi/freeconsultation.png">
-      </div>
-    </div>
-  </section>
-  
-  <section id="consultation-text-right">
-    <div class="row">
-      <div clas="square l">
-        
-      </div>
-      <div class="square r">
-        <h5>Do you need help to create an efficient design and build a solid trust between your visitors and your brand?</h5>
-      </div>
-    </div>
-  </div>
 </section>
-
-
-</body>
-<script>
-  /*slider script*/
-  var index= 1;
-
-  function plusIndex(n){
-    index = index + n;
-    showImage(index);
-  }
-
-  showImage(1);
-
-  function showImage(n){
-    var i;
-    var x = document.getElementsByClassName("slides");
-    if(n > x.length){index = 1};
-    if(n <1){index = x.length};
-    for(i=0;i<x.length;i++){
-      x[i].style.display="none";
-    }
-    x[index-1].style.display= "block";
-  }
-
-  autoSlide();
-  function autoSlide(){
-  var i;
-  var x = document.getElementsByClassName("slides");
-  for(i=0;i<x.length;i++){
-        x[i].style.display="none";
-      }
-   if(index > x.length){index = 1}
-   x[index-1].style.display= "block";
-   index++;
-   setTimeout(autoSlide,2000);
-  }
-</script>
-</html>
