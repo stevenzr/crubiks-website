@@ -1091,9 +1091,17 @@ width: 70%;
 }
 /* Contact Section
 --------------------------------*/
+.contact-button{
+  color: white;
+  background-color: black;
+  width: 10em;
+  height: 4em;
+  border: 2px solid white;
+}
 #contact {
   background: #f7f7f7;
   padding: 80px 0;
+  display: none;
 }
 
 #contact .info {
@@ -1334,6 +1342,14 @@ vertical-align: top;
 #footer .grid-item2 a:hover{
   font-size: 1.1em;
   color: black;
+}
+
+#footer .left button{
+  color: white;
+  background-color: #300F31;
+  border: 0.3em solid white;
+  width: 10em;
+  height: 4em;
 }
 
 /*--------------------------------------------------------------

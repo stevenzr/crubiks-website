@@ -68,7 +68,7 @@
     <div class="row">
                 <div class="box left">
                     <h1>Ready To Collaborate?</h1>
-                    <div class="text-center"><button type="submit">CONTACT US</button></div>
+                    <div class="text-center"><button onclick="contactFunction()">CONTACT US</button></div>
                    
                 </div>
 
@@ -120,5 +120,14 @@
         </div>     
     </div>      
 </div>
-   
+<script>
+    function contactFunction() {
+    var x = document.getElementById("contact");
+    if (x.style.display != "block") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}
+</script>
            
