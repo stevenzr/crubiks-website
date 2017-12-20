@@ -27,7 +27,7 @@
             </div><!-- /.navbar-collapse -->
             </div>
             <div class="box right">
-                <button>Contact Us</button>
+                <button id="contact-button-top">Contact Us</button>
             </div>
         </nav>
     </div>
@@ -41,9 +41,12 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 <script>
-    $("button").click(function() {
-    $('html, body').animate({
-        scrollTop: $("#contact").offset().top
+    $(document).ready(function(){
+    $("#contact-button-top").click(function(){
+        $("#contact").slideToggle(1000);
+        $("html, body").animate({ scrollTop: $("#contact").offset().top
     }, 2000);
+        
+    });
 });
 </script>
