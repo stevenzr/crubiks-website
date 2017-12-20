@@ -2,6 +2,7 @@
 <div class="header-nav">
     <div class="container">
         <nav class="imperial-navbar">
+            <div class="box left">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -22,8 +23,12 @@
                         <li class="<%= item[:current_item] ? 'act' : 'hvr-bubble-bottom' %>"><a class="<%= 'scroll' if item[:url].start_with?('#') %>" href="<%= item[:url] %>"><%= item[:label] %></a></li>
                     <% end %>
                 </ul>
-            </div><!-- /.navbar-collapse -->
 
+            </div><!-- /.navbar-collapse -->
+            </div>
+            <div class="box right">
+                <button>Contact Us</button>
+            </div>
         </nav>
     </div>
     
@@ -32,6 +37,13 @@
       </div>
 </div>
 <!-- header -->
-<!-- header-bottom -->
 
-<!-- //header-bottom -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<script>
+    $("button").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#contact").offset().top
+    }, 2000);
+});
+</script>
