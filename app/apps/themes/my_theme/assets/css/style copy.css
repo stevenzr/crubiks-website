@@ -1312,7 +1312,7 @@ width: 70%;
 }
 
 #footer .left{
-  width: 100%;
+  width: 20%;
   background: #300F31;
   padding-top: 2em;
 }
@@ -1340,7 +1340,7 @@ vertical-align: top;
   float: none;
   display: inline-block;
   vertical-align: top;
-  padding-left: 5em;
+  padding-left: 8em;
 }
 
 #footer .grid-item a{
