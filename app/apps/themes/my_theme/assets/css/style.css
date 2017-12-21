@@ -253,13 +253,10 @@ h1, h2, h3, h4, h5, h6 {
 # Header
 --------------------------------------------------------------*/
 .imperial-navbar{
-  background-color: white;
-  background: white; /*menu bar color*/
-
+  background: transparent; /*menu bar color*/
 }
 
-.header-nav {
-  background: white;
+.header-nav{
   padding: 20px 0;
   height: 90px;
   background: white; /*header color*/
@@ -314,7 +311,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #header #logo h1 a, #header #logo h1 a:hover {
-  color: #fff;
+ 
 }
 
 #header #logo img {
@@ -365,9 +362,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navbar-header{
-  color: white;
-  background-color: #fff;
-  background: white;
+  background: transparent;
 }
 /*add this */
 .navbar-brand {
