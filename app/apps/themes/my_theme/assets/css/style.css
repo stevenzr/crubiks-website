@@ -263,8 +263,10 @@ h1, h2, h3, h4, h5, h6 {
   padding: 20px 0;
   height: 90px;
   background: white; /*header color*/
-  
-
+  position: fixed;
+  width: 100%;
+  z-index: 99999;
+  top: 0;
 }
 .header-nav .box{
   width: 100%;
@@ -802,7 +804,16 @@ margin-right: 3em;
 }
 
 
+/*services gray img on hover color*/
+#services a.services-item {
+  -webkit-filter: grayscale(100%);
+  -webkit-transition: all .6s ease; /*fade to color*/
+  -webkit-backface-visibility: hidden; /* Fix for transition flickering */
+}
 
+#services a.services-item:hover {
+  -webkit-filter: grayscale(0%);
+}
 
 /* Subscribe Section
 --------------------------------*/
