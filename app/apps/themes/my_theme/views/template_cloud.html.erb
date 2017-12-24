@@ -4,14 +4,14 @@
 	</div>
   <div class="container-buttons">
   <div class="row">
-    <div class="box1-buttons">
-    <a href="http://localhost:3000/adwords-1"><button>Adwords</button></a>
-         <a href="http://localhost:3000/analytic-1"><button>Analytic</button></a>
-         <a href="http://localhost:3000/cloudsolutions-1"><button>Cloud Solution</button></a>
-         <a href="http://localhost:3000/digital-1"><button>Digital Workspace Solution</button></a>
-         <a href="http://localhost:3000/mobileapp-1"><button>Mobile apps</button></a>
-         <a href="http://localhost:3000/seo-1"><button>SEO</button></a>
-         <a href="http://localhost:3000/webdev-1"><button>Web Development</button></a>
+    <div class="box1-buttons" id="myHeader">
+    <a href="https://crubiks-web.herokuapp.com/adwords-1"><button>Adwords</button></a>
+         <a href="https://crubiks-web.herokuapp.com/analytic-1"><button>Analytic</button></a>
+         <a href="https://crubiks-web.herokuapp.com/cloudsolutions-1"><button>Cloud Solution</button></a>
+         <a href="https://crubiks-web.herokuapp.com/digital-1"><button>Digital Workspace Solution</button></a>
+         <a href="https://crubiks-web.herokuapp.com/mobileapps-1"><button>Mobile apps</button></a>
+         <a href="https://crubiks-web.herokuapp.com/seo-1"><button>SEO</button></a>
+         <a href="https://crubiks-web.herokuapp.com/webdev-1"><button>Web Development</button></a>
        </div>
   </div>
 </div>
@@ -21,3 +21,17 @@
 <div id="ImageContainer">
     <img src="https://s3-ap-southeast-1.amazonaws.com/drupalcrubiksassets/crubiks1revisi/crubiks1revisi/home8a.jpg" class="Img" />
 </div>
+<script>
+  window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky -90) {
+    header.classList.add("stickyasd");
+  } else {
+    header.classList.remove("stickyasd");
+  }
+}
+</script>
