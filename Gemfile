@@ -5,9 +5,7 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
-gem 'camaleon_ecommerce', github:  'owen2345/camaleon-ecommerce'
-gem 'cama_tinymce_template', github: 'owen2345/Camaleon-Tinymce-Templates'
-gem 'cama_meta_tag', github:  'owen2345/camaleon-cms-seo'
+
 gem "camaleon_cms",  '>= 2.4.5'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.4'
@@ -65,4 +63,3 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 
 #################### Camaleon CMS include all gems for plugins and themes #################### 
-gem 'job_vacancy', path: 'apps/plugins/job_vacancy'
