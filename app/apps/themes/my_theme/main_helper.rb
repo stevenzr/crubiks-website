@@ -3,6 +3,10 @@ module Themes::MyTheme::MainHelper
     # klass.helper_method [:my_helper_method] rescue "" # here your methods accessible from views
   end
 
+  def my_theme_admin_before_load
+    append_asset_libraries({"my_tinymce"=> { js: [theme_asset("js/my_tinymce_templates")]}})
+  end
+  
   def my_theme_settings(theme)
     # callback to save custom values of fields added in my_theme/views/admin/settings.html.erb
   end
@@ -24,4 +28,6 @@ module Themes::MyTheme::MainHelper
   # callback executed after theme uninstalled
   def my_theme_on_uninstall_theme(theme)
   end
+
+
 end

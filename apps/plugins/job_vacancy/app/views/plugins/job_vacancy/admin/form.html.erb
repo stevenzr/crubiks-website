@@ -1,0 +1,33 @@
+
+<div class="panel panel-default">
+  <div class="panel-heading ui-draggable-handle">
+    <h4><span class="fa fa-apple"></span> <%= @job_division.new_record? ? t('plugins.job_vacancy.new_job_division') : "#{t('plugins.job_vacancy.edit_job_division')}: #{@job_division.name}" %></h4>
+  </div>
+  <%= form_for @job_division, url:{action: @job_division.new_record? ? :create : :update},  html: {class: 'validate-job_division', id: 'form-job_division'}  do |f| %>
+    <div class="panel-body">
+      <%= render partial: 'layouts/camaleon_cms/admin/form_error', locals: {data: @job_division} %>
+      <div class="form-group">
+        <%= f.label t('camaleon_cms.admin.table.name') %><br>
+        <%= f.text_field :name, :class => "form-control required", placeholder: "eg:'Marketing' [name can be the same as job divisions below...]" %>
+      </div>
+      <% options = params[:options].present? ? params[:options] : @job_division.options rescue {} %>
+      <div class="form-group">
+        <label for=""><%= t('plugins.job_division.table.job_divisions') %></label><br>
+        <%= text_field "options[job_divisions]", options[:job_divisions] || '', :class => "form-control required", placeholder: "input job division here eg:'Marketing'" %>
+      </div>
+
+
+
+
+      <div class="form-group">
+        <label><%= f.check_box :status %> &nbsp; <%= t('plugins.job_vacancy.active')%></label>
+      </div>
+    </div>
+    <div class="panel-footer">
+      <a class="btn btn-default" href="<%= url_for action: :index %>" role="back"><%= t('camaleon_cms.admin.button.back')%></a>
+      <button class="btn btn-primary pull-right" type="submit"><%= t('camaleon_cms.admin.button.submit')%></button>
+    </div>
+  <% end %>
+</div>
+
+

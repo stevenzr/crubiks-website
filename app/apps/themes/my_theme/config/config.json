@@ -8,7 +8,8 @@
   "hooks": {
     "on_active": ["my_theme_on_install_theme"],
     "on_inactive": ["my_theme_on_uninstall_theme"],
-    "on_theme_settings": ["my_theme_settings"]
+    "on_theme_settings": ["my_theme_settings"],
+    "admin_before_load": ["my_theme_admin_before_load"]
     //here all your hooks
   }
 }

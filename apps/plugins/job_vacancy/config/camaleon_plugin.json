@@ -1,0 +1,15 @@
+{
+  "title": "Job Vacancy",
+  "descr": "",
+  "key": "job_vacancy", // must be the name of the folder of your plugin, sample: app/views/plugins/<my_plugin> ==> 'my_plugin'
+  "helpers": [
+    "Plugins::JobVacancy::MainHelper"
+  ],
+  "hooks": {
+    "on_active": ["job_vacancy_on_active"],
+    "on_inactive": ["job_vacancy_on_inactive"],
+    "plugin_options": ["job_vacancy_on_plugin_options"],
+    "admin_before_load": ["job_vacancy_admin_before_load"]
+    //here you can add all your hooks (read documentation)
+  }
+}

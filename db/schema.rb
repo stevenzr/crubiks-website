@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171127050248) do
+ActiveRecord::Schema.define(version: 20180209073259) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -154,6 +154,16 @@ ActiveRecord::Schema.define(version: 20171127050248) do
     t.index ["username"], name: "index_cama_users_on_username"
   end
 
+  create_table "plugins_attacks", force: :cascade do |t|
+    t.string "path"
+    t.string "browser_key"
+    t.bigint "site_id"
+    t.datetime "created_at"
+    t.index ["browser_key"], name: "index_plugins_attacks_on_browser_key"
+    t.index ["path"], name: "index_plugins_attacks_on_path"
+    t.index ["site_id"], name: "index_plugins_attacks_on_site_id"
+  end
+
   create_table "plugins_contact_forms", id: :serial, force: :cascade do |t|
     t.integer "site_id"
     t.integer "count"
@@ -163,6 +173,105 @@ ActiveRecord::Schema.define(version: 20171127050248) do
     t.text "description"
     t.text "value"
     t.text "settings"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "plugins_ecommerce_attributes", id: :serial, force: :cascade do |t|
+    t.string "key"
+    t.string "label"
+    t.integer "parent_id"
+    t.integer "site_id"
+    t.integer "position", default: 0
+    t.index ["parent_id"], name: "index_plugins_ecommerce_attributes_on_parent_id"
+    t.index ["site_id"], name: "index_plugins_ecommerce_attributes_on_site_id"
+  end
+
+  create_table "plugins_ecommerce_orders", id: :serial, force: :cascade do |t|
+    t.string "name"
+    t.string "slug"
+    t.string "kind"
+    t.string "coupon"
+    t.string "the_coupon_amount"
+    t.string "currency_code"
+    t.string "payment_data"
+    t.string "status", default: "unpaid"
+    t.integer "shipping_method_id"
+    t.integer "user_id"
+    t.integer "site_id"
+    t.integer "payment_method_id"
+    t.datetime "paid_at"
+    t.datetime "received_at"
+    t.datetime "accepted_at"
+    t.datetime "shipped_at"
+    t.datetime "closed_at"
+    t.string "cache_the_total"
+    t.string "cache_the_sub_total"
+    t.string "cache_the_tax"
+    t.string "cache_the_weight"
+    t.string "cache_the_discounts"
+    t.string "cache_the_shipping"
+    t.decimal "amount", precision: 8, scale: 2
+    t.text "description"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.string "visitor_key"
+    t.string "invoice_number", default: ""
+    t.string "invoice_path", default: ""
+    t.index ["payment_method_id"], name: "index_plugins_ecommerce_orders_on_payment_method_id"
+    t.index ["shipping_method_id"], name: "index_plugins_ecommerce_orders_on_shipping_method_id"
+    t.index ["site_id"], name: "index_plugins_ecommerce_orders_on_site_id"
+    t.index ["user_id"], name: "index_plugins_ecommerce_orders_on_user_id"
+  end
+
+  create_table "plugins_ecommerce_product_variations", id: :serial, force: :cascade do |t|
+    t.decimal "amount", precision: 8, scale: 2
+    t.integer "product_id"
+    t.string "photo"
+    t.string "sku"
+    t.integer "weight"
+    t.integer "position", default: 0
+    t.integer "qty", default: 0
+    t.string "attribute_ids"
+    t.index ["product_id"], name: "index_plugins_ecommerce_product_variations_on_product_id"
+  end
+
+  create_table "plugins_ecommerce_products", id: :serial, force: :cascade do |t|
+    t.integer "qty"
+    t.integer "product_id"
+    t.integer "order_id"
+    t.string "cache_the_price"
+    t.string "cache_the_title"
+    t.string "cache_the_tax"
+    t.string "cache_the_sub_total"
+    t.integer "variation_id"
+    t.index ["order_id"], name: "index_plugins_ecommerce_products_on_order_id"
+    t.index ["product_id"], name: "index_plugins_ecommerce_products_on_product_id"
+    t.index ["qty"], name: "index_plugins_ecommerce_products_on_qty"
+  end
+
+  create_table "plugins_job", id: :serial, force: :cascade do |t|
+    t.integer "job_id"
+    t.string "customer"
+    t.string "email"
+    t.string "phone"
+    t.datetime "received_at"
+    t.datetime "accepted_at"
+    t.datetime "shipped_at"
+    t.datetime "closed_at"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "plugins_order_details", id: :serial, force: :cascade do |t|
+    t.integer "order_id"
+    t.string "customer"
+    t.string "email"
+    t.string "phone"
+    t.datetime "received_at"
+    t.datetime "accepted_at"
+    t.datetime "shipped_at"
+    t.datetime "closed_at"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

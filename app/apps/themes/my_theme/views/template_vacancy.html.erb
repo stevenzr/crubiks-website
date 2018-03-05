@@ -9,5 +9,102 @@
 	<p>  Job Vacancy</p>	
 </div>
 
+<div>	
+	<p>This is the where we place our list of available jobs. If there is no jobs available right now a message will be shown below.</p>
+</div>
+<div id="notifFunction"></div>
+
+<div class="jobs" id="jobDivision">
+	<ol style="list-style-type:none">
+		<li>
+			<p>Division 1</p>
+		</li>
+		<li>
+			<p>Division 2</p>
+		</li>
+		<li>
+			<p>Division 3</p>
+		</li>
+	</ol>  
+</div>
+
+<div class="jobs" id="jobActive">
+	<ol style="list-style-type:none">
+		<li>
+			<a id="linkz" href="adwords-1">Tes job 1</a>
+		</li>
+		<li>
+			<a id="linkzz" href="adwords-1">tes job 2</a>
+		</li>
+		<li>
+			<a id="linkzzz" href="adwords-1">tes job 3</a>
+		</li>
+	</ol>  
+</div>
 
 </section>
+</body>
+
+<!--ini scriptnya-->
+
+<script>
+/*
+var job_active = document.getElementById("jobActive");
+var job_division = document.getElementById("jobDivision");
+
+var job_link1 = document.getElementById("linkz");
+var job_link2 = document.getElementById("linkzz");
+var job_link3 = document.getElementById("linkzzz");
+
+var count_job_active = 0; /*pull data from backend*/
+
+
+/*
+function myFunction() {
+  if (count_job_active > 1 ) 
+  {
+	job_division.style.display = "block";
+  } 
+  
+  else 
+  {
+	job_division.innerHTML = "no job available";
+	job_link1.href = "http://www.google.com";
+	job_link2.href = "http://www.yahoo.com";
+	job_link3.href = "http://www.bench.co";
+  }
+}
+
+
+window.onload = myFunction;
+*/
+
+var count_job_active = 3;
+var count_div_total = 2;
+
+var job_div_total = ["engineer", "doctor"];
+var job_engineer = ["fulldev", "analyst"];
+var d =0;
+var j=0;
+var div_text = "";
+var job_text = "";
+
+function m(){
+	if (count_job_active > 1){
+		do{
+			for(;job_div_total[d];){
+				div_text +=job_div_total[d] + "<br>";
+				job_division.innerHTML= div_text;
+
+			for(;job_engineer[j];){
+				job_text +=job_engineer[j] + "<br>";
+				job_active.innerHTML= job_text;
+				j++;
+			}
+			d++;
+			}
+			count_div_total --;
+		}while(count_div_total >0);
+	}
+}
+</script>
