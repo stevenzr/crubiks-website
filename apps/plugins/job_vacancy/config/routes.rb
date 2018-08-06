@@ -16,7 +16,7 @@ Rails.application.routes.draw do
         namespace 'plugins' do
           namespace 'job_vacancy' do
             controller :admin do
-              post :create #working & this create a routing for create method in form.hrml => post
+               #working & this create a routing for create method in form.hrml => post
               get :index
               get :settings
               post :save_settings

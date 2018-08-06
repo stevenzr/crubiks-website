@@ -1,0 +1,15 @@
+{
+  "title": "Blogs",
+  "descr": "",
+  "key": "blog", // must be the name of the folder of your plugin, sample: app/views/plugins/<my_plugin> ==> 'my_plugin'
+  "helpers": [
+    "Plugins::Blog::MainHelper"
+  ],
+  "hooks": {
+    "on_active": ["blog_on_active"],
+    "on_inactive": ["blog_on_inactive"],
+    "plugin_options": ["blog_on_plugin_options"],
+    //here you can add all your hooks (read documentation)
+    "admin_before_load": ["blog_admin_before_load"]
+  }
+}

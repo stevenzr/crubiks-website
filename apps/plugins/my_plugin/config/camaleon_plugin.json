@@ -1,0 +1,15 @@
+{
+  "title": "My Plugin",
+  "descr": "",
+  "key": "my_plugin", // must be the name of the folder of your plugin, sample: app/views/plugins/<my_plugin> ==> 'my_plugin'
+  "helpers": [
+    "Plugins::MyPlugin::MainHelper"
+  ],
+  "hooks": {
+    "on_active": ["my_plugin_on_active"],
+    "on_inactive": ["my_plugin_on_inactive"],
+    "plugin_options": ["my_plugin_on_plugin_options"],
+    "admin_before_load": ["my_plugin_admin_before_load"]
+    //here you can add all your hooks (read documentation)
+  }
+}

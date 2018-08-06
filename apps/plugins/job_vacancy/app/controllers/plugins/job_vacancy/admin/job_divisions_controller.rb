@@ -41,8 +41,6 @@ class Plugins::JobVacancy::Admin::JobDivisionsController < Plugins::JobVacancy::
   end
 
 
-
-
   private
   def job_division_permit_data
     params.require(:plugins_job_vacancy_job_division).permit!

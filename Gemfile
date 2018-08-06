@@ -64,3 +64,5 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 #################### Camaleon CMS include all gems for plugins and themes #################### 
 gem 'job_vacancy', path: 'apps/plugins/job_vacancy'
+gem 'my_plugin', path: 'apps/plugins/my_plugin'
+gem 'blog', path: 'apps/plugins/blog'

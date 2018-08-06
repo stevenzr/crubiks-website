@@ -1,0 +1,15 @@
+{
+  "title": "Sample Menus",
+  "descr": "",
+  "key": "sample_menu", // must be the name of the folder of your plugin, sample: app/views/plugins/<my_plugin> ==> 'my_plugin'
+  "helpers": [
+    "Plugins::SampleMenu::MainHelper"
+  ],
+  "hooks": {
+    "on_active": ["sample_menu_on_active"],
+    "on_inactive": ["sample_menu_on_inactive"],
+    "plugin_options": ["sample_menu_on_plugin_options"],
+    "admin_before_load": ["sample_menu_admin_before_load"]
+    //here you can add all your hooks (read documentation)
+  }
+}
